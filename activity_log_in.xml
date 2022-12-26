@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#68E6FAE7"
+    tools:context=".LogIn">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="157dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/register_cauli" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/autour_one"
+        android:text="Log In"
+        android:textAlignment="center"
+        android:textColor="#E80D6311"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--THIS IS  INPUT FIELD FOR OUR USER_NAME  IN LOG IN-->
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="7dp"
+        android:paddingLeft="5dp"
+        android:ems="10"
+        android:hint="User_Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <!--THIS IS  INPUT FIELD FOR OUR PASSWORD  IN LOG IN-->
+
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="295dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="7dp"
+        android:paddingLeft="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <!--THIS IS  LOG IN BUTTON FOR OUR LOGIN in LOG IN-->
+
+
+    <Button
+        android:id="@+id/logInButton"
+        android:layout_width="138dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_border"
+        android:fontFamily="@font/anton"
+        android:text="Log In"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+
+
+
+
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
